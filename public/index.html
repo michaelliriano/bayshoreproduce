@@ -1,43 +1,126 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bayshore Produce</title>
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <link rel="icon" href="logo.ico" />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <section id="landing-page">
+      <div class="image-container">
+        <div class="outer">
+          <div class="main-text">
+            <h1>Bayshore Produce. Quality Driven.</h1>
+            <p>
+              At Bayshore Produce, our mission is to provide our customers with
+              the best quality produce at the most competitive price.
+            </p>
+            <a href="#about"
+              ><button class="learn-more">Connect With Us</button></a
+            >
+          </div>
+          <div class="logo">
+            <img src="/images/logo.png" alt="" />
+          </div>
+          <h2 class="company">Bayshore <span>Produce</span></h2>
+          <div class="hamburger-icon open">
+            <i class="fas fa-bars"></i>
+          </div>
+          <nav>
+            <ul class="nav-list">
+              <div class="menu-icons close">
+                <i class="fas fa-times"></i>
+              </div>
+              <li class="nav-item"><a href="#">Home</a></li>
+              <li class="nav-item"><a href="#about">About</a></li>
+              <li class="nav-item"><a href="#products">Products</a></li>
+              <li class="nav-item"><a href="#facility">Facility</a></li>
+              <li class="nav-item"><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <section id="about">
+      <div class="about-us">
+        <h2>What We Do</h2>
+        <div class="container">
+          <p>
+            At <span class="darkblue">Bayshore Produce</span>, our mission is to
+            provide our customers with the best quality produce at the most
+            competitive price. Bayshore Produce was founded by
+            <span class="darkblue">Rosann Cabrera</span> in 2010 after working
+            in the industry for 17 years as a buyer/broker. Now with over
+            <span class="darkblue">25 years of produce experience </span> and an
+            experienced staff, our goal is still the same; to help our customers
+            be successful.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="products">
+      <div class="products">
+        <h2>Our Products</h2>
+      </div>
+      <div class="our-products">
+        <div class="row-one">
+          <div class="single-product">
+            <img src="/images/product-fruit.png" alt="" />
+            <h3>Fruit</h3>
+            <p>
+              We offer a year round supply of fresh fruit from our domestic
+              growing partners as well as direct imports from other growing
+              regions to guarantee a steady supply for our customers
+            </p>
+          </div>
+          <div class="single-product">
+            <img src="/images/product-veges.png" alt="" />
+            <h3>Vegetables</h3>
+            <p>
+              Our relationships with many of the top growers in North America
+              ensures a constant supply of fresh vegetables
+            </p>
+          </div>
+        </div>
+        <div class="row-two">
+          <div class="single-product">
+            <img src="/images/product-herbs.png" alt="" />
+            <h3>Herbs</h3>
+            <p>
+              In addition to our other commodities, we also offer a broad
+              variety of herbs
+            </p>
+          </div>
+          <div class="single-product">
+            <img src="/images/product-special.png" alt="" />
+            <h3>Specialty Items</h3>
+            <p>Any specialty item can be ordered to meet your precise needs</p>
+          </div>
+        </div>
+        <div class="row-three">
+          <div class="single-product">
+            <img src="/images/product-other.png" alt="" />
+            <h3>Other Products</h3>
+            <p>
+              We offer a full line of other refrigerated items-- eggs, meat ,
+              juice and dairy products to name a few
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/7cc983347b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
   </body>
 </html>
